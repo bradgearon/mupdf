@@ -11,6 +11,7 @@ include $(CLEAR_VARS)
 
 MY_ROOT := ../../..
 
+LOCAL_CFLAGS += -DNOCJK -DTOFU -DNOTO_SMALL
 LOCAL_CFLAGS += -Wall -Wno-maybe-uninitialized
 
 ifeq ($(TARGET_ARCH),arm)
@@ -66,8 +67,7 @@ LOCAL_SRC_FILES := \
 	$(wildcard $(MY_ROOT)/source/svg/*.c) \
 	$(wildcard $(MY_ROOT)/source/cbz/*.c) \
 	$(wildcard $(MY_ROOT)/source/gprf/*.c) \
-	$(wildcard $(MY_ROOT)/source/html/*.c) \
-	$(wildcard $(MY_ROOT)/generated/*.c)
+	$(wildcard $(MY_ROOT)/source/html/*.c)
 LOCAL_SRC_FILES += \
 	$(MY_ROOT)/source/pdf/js/pdf-js.c \
 

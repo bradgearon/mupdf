@@ -12,7 +12,7 @@
 		android:normalScreens="true"
 		android:largeScreens="true"
 		android:anyDensity="true" />
-	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="16"/>
 	<application
 		android:label="@string/app_name"
 		android:icon="@drawable/icon"
@@ -99,4 +99,4 @@
 			android:label="@string/print">
 		</activity>
 	</application>
-</manifest> 
+</manifest>
